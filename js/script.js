@@ -58,6 +58,9 @@ function changeColor(e) {   //function when mouse hovers to change color accordi
 		let color = document.getElementById("favColor");
 		this.style.backgroundColor = color.value;
 	}
+	else {
+		this.style.backgroundColor = "white";
+	}
 }
 
 let clearBtn = document.getElementById("clear");
@@ -84,3 +87,8 @@ function getRainbow() {   //makes the random rainbow color
     }
     return color;
 }
+
+let eraser = document.getElementById("eraser");
+eraser.addEventListener('click', function(e) {
+	colorMode = "erase";
+});
